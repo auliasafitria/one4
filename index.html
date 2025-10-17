@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman Keren Aulia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-600 via-blue-500 to-indigo-700 text-white min-h-screen flex flex-col items-center justify-center">
+
+  <!-- Navbar -->
+  <nav class="w-full flex justify-between items-center px-8 py-4 bg-white/10 backdrop-blur-md fixed top-0 left-0 z-50">
+    <h1 class="text-2xl font-bold tracking-wide">✨ Aulia Page</h1>
+    <div class="space-x-6">
+      <a href="#about" class="hover:text-yellow-300 transition">Tentang</a>
+      <a href="#portfolio" class="hover:text-yellow-300 transition">Portfolio</a>
+      <a href="#contact" class="hover:text-yellow-300 transition">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center mt-32 fade-in">
+    <h2 class="text-5xl font-bold mb-4">Halo, Saya <span class="text-yellow-300">Aulia</span> 👋</h2>
+    <p class="text-lg mb-8 max-w-lg mx-auto">Seorang pelajar SMA yang suka belajar desain web dan analisis data. Mari lihat karya dan profil saya!</p>
+    <a href="#portfolio" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Lihat Portfolio</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="mt-20 px-8 fade-in max-w-3xl text-center">
+    <h3 class="text-3xl font-bold mb-6">Tentang Saya</h3>
+    <p class="text-gray-100">Saya senang mempelajari hal baru, terutama di bidang teknologi, desain, dan statistik. Saya juga sering membuat proyek kecil seperti website pribadi, dashboard data, dan karya kreatif lainnya.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="mt-20 px-8 fade-in">
+    <h3 class="text-3xl font-bold mb-8 text-center">Portfolio</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Website Sekolah</h4>
+        <p>Desain website sederhana untuk profil sekolah dengan HTML & Tailwind.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Data Visualisasi</h4>
+        <p>Proyek visualisasi data menggunakan Python dan Chart.js.</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Desain Grafis</h4>
+        <p>Kumpulan desain poster dan banner digital yang pernah dibuat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="mt-20 mb-16 px-8 fade-in text-center">
+    <h3 class="text-3xl font-bold mb-6">Hubungi Saya</h3>
+    <p class="mb-6">Tertarik berkolaborasi atau ingin mengenal lebih dekat? Kirim pesan di bawah ini!</p>
+    <a href="mailto:aulia@example.com" class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Kirim Email</a>
+  </section>
+
+  <footer class="w-full text-center py-4 text-white/70">
+    © 2025 Aulia Nayani Safitri — Dibuat dengan 💜 dan Tailwind CSS
+  </footer>
+
+</body>
+</html>
